@@ -1,0 +1,12 @@
+	/**
+	 * メソッド${methodName}で指定した戻り値を返す${className}クラスのモックを返す。
+	 *
+	 * @param retValue モックが返す値
+	 * @return ${className}クラスのモックオブジェクト
+	 */
+	private ${className} getMockWithReturnValue_${className}_${methodName}(${retType} retValue) throws Exception{
+		// privateメソッド
+		${className} target = PowerMockito.mock(${className}.class);
+		PowerMockito.when(target, "${methodName}"${args}).thenReturn(retValue);
+		return target;
+	}

@@ -1,0 +1,12 @@
+	/**
+	 * メソッド${methodName}実行時に処理を行わない${className}クラスのモックを返す。
+	 *
+	 * @param retValue
+	 * @return
+	 */
+	private ${className} getMockWithDoNothing_${className}_${methodName}() throws Exception {
+		// void private
+		${className} target = PowerMockito.mock(${className}.class);
+		PowerMockito.doNothing().when(target, "${methodName}"${args});
+		return target;
+	}

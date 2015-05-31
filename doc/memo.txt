@@ -1,0 +1,14 @@
+static
+
+instance
+
+PowerMockito.when()
+
+
+PowerMockito.whenNew()
+
+
+
+PowerMockito.doNothng()
+
+

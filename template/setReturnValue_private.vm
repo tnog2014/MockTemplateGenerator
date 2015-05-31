@@ -1,0 +1,11 @@
+	/**
+	 * メソッド${className}.${methodName}で指定した戻り値を返すように設定する。
+	 *
+	 * @param retValue ${className}.${methodName}の返す値
+	 * @throws Exception
+	 */
+	private void setReturnValue_${className}_${methodName}(${retType} retValue) throws Exception {
+		// public staticメソッド
+		PowerMockito.mockStatic(${className}.class);
+		PowerMockito.when(${className}.class, "${methodName}"${args}).thenReturn(retValue);
+	}
